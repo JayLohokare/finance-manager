@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/rel4"
+
+            xmlns:android1="http://schemas.android.com/apk/res/android">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_new"
+                fab:fab_colorNormal="@color/colorPrimaryYellow"
+                fab:fab_colorPressed="@color/colorPressedYellow"
+                fab:fab_colorRipple="@color/colorRippleYellow"
+                android:layout_above="@+id/redo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/redo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_new"
+                fab:fab_colorNormal="@color/colorPrimaryYellow"
+                fab:fab_colorPressed="@color/colorPressedYellow"
+                fab:fab_colorRipple="@color/colorRippleYellow"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/from"
+                android:id="@+id/relscroll"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/budg"
+                    android:layout_above="@+id/bal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/sav"
+                    android:layout_marginBottom="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/inc"
+                    android:layout_above="@+id/budg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp" />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/exp"
+                    android:layout_centerVertical="true"
+                    android:layout_above="@+id/inc"
+                    android:layout_marginBottom="50dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/bal"
+                    android:layout_above="@+id/sav"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            local:theme="@style/ThemeOverlay.AppCompat.Light"
+
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+            <LinearLayout
+                android:id="@+id/search_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+
+
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.codeitsuisse.team92.expensetracker.FragmentDrawer"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/navigation_drawer"
+        tools:layout="@layout/navigation_drawer" />
+
+    <!-- <android.support.v7.widget.CardView
+       xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       card_view:cardBackgroundColor="#E6E6E6"
+       card_view:cardCornerRadius="8dp"
+       card_view:cardElevation="8dp"
+       android:layout_height="fill_parent">
+
+      Main Content View
+
+    </android.support.v7.widget.CardView>-->
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

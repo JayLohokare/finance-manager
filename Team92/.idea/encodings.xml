@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/codeitsuisse/team92/expensetracker/FragmentDrawer.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/codeitsuisse/team92/expensetracker/NavDrawerItem.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/codeitsuisse/team92/expensetracker/NavigationDrawerAdapter.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-nodpi" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/entertainment_icon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/food_icon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/foto.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shopping_icon.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/nav_drawer_row.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/navigation_drawer.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values-v14" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values-v21" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values-w820dp" charset="windows-1252" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
